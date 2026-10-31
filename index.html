@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LUCA — เสื้อยืดลายกราฟิก | @luca.thailand</title>
+  <meta name="description" content="LUCA เสื้อยืดลายกราฟิกสไตล์เกมย้อนยุคและการ์ตูน GOOD GAME, LUCA RANGERS, Japan Street ไซซ์ M–2XL สั่งซื้อและชำระเงินผ่านพร้อมเพย์ได้ทันที" />
+  <meta name="theme-color" content="#F5C518" />
+  <meta property="og:title" content="LUCA — Official Store" />
+  <meta property="og:description" content="เสื้อยืดลายกราฟิกจาก LUCA สั่งตรงจากแบรนด์ ชำระผ่านพร้อมเพย์" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/img/goodgame-black.jpg" />
+  <link rel="icon" type="image/png" href="assets/img/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700;800&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="announce" id="announce"></div>
+
+  <header class="header">
+    <div class="wrap header-in">
+      <button class="icon-btn menu-btn" id="menuBtn" aria-label="เมนู">
+        <svg viewBox="0 0 24 24" width="24" height="24"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>
+      </button>
+      <a href="#/" class="logo" aria-label="LUCA หน้าแรก"><img src="assets/img/logo.png" alt="LUCA" /></a>
+      <nav class="nav" id="nav">
+        <a href="#/shop">สินค้าทั้งหมด</a>
+        <a href="#/shop?c=good-game">Good Game</a>
+        <a href="#/shop?c=luca-rangers">Rangers</a>
+        <a href="#/shop?c=japan-street">Japan Street</a>
+        <a href="#/size">ตารางไซซ์</a>
+        <a href="#/track">ติดตามออเดอร์</a>
+      </nav>
+      <button class="cart-btn" id="cartBtn" aria-label="ตะกร้าสินค้า">
+        <svg viewBox="0 0 24 24" width="22" height="22"><path d="M6 7h12l-1 13H7L6 7Z M9 7a3 3 0 0 1 6 0" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/></svg>
+        <span class="cart-count" id="cartCount">0</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="app" tabindex="-1"><div class="loading">LOADING<span class="blink">_</span></div></main>
+
+  <footer class="footer">
+    <div class="wrap footer-in">
+      <div>
+        <img src="assets/img/logo.png" alt="LUCA" class="footer-logo" />
+        <p class="muted">เสื้อยืดลายกราฟิก ออกแบบโดย LUCA<br />@luca.thailand</p>
+        <div class="socials" id="socials"></div>
+      </div>
+      <div>
+        <h4>ช้อป</h4>
+        <a href="#/shop">สินค้าทั้งหมด</a>
+        <a href="#/shop?c=good-game">Good Game Collection</a>
+        <a href="#/shop?c=luca-rangers">LUCA Rangers</a>
+        <a href="#/shop?c=japan-street">Japan Street</a>
+      </div>
+      <div>
+        <h4>ช่วยเหลือ</h4>
+        <a href="#/how">วิธีสั่งซื้อ</a>
+        <a href="#/size">ตารางไซซ์</a>
+        <a href="#/track">ติดตามออเดอร์</a>
+        <a href="#/faq">คำถามที่พบบ่อย / การเปลี่ยนสินค้า</a>
+      </div>
+    </div>
+    <div class="wrap copyright">© <span id="year"></span> LUCA Thailand. All rights reserved.</div>
+  </footer>
+
+  <!-- ตะกร้าสินค้า -->
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+  <aside class="drawer" id="cartDrawer" aria-label="ตะกร้าสินค้า" aria-hidden="true">
+    <div class="drawer-head">
+      <h3>ตะกร้าของคุณ</h3>
+      <button class="icon-btn" id="cartClose" aria-label="ปิด">✕</button>
+    </div>
+    <div class="drawer-body" id="cartBody"></div>
+    <div class="drawer-foot" id="cartFoot"></div>
+  </aside>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="config.js"></script>
+  <script src="js/vendor/qrcode.js"></script>
+  <script src="js/promptpay.js"></script>
+  <script src="js/pricing.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

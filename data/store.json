@@ -1,0 +1,209 @@
+{
+  "shipping": [
+    {
+      "id": "standard",
+      "name": "ส่งธรรมดา (Flash / J&T)",
+      "fee": 40,
+      "days": "2–4 วันทำการ"
+    },
+    {
+      "id": "ems",
+      "name": "EMS ไปรษณีย์ไทย",
+      "fee": 60,
+      "days": "1–2 วันทำการ"
+    }
+  ],
+  "freeShippingMin": 1000,
+  "cod": {
+    "enabled": true,
+    "fee": 30
+  },
+  "coupons": [
+    {
+      "code": "WELCOME10",
+      "type": "percent",
+      "value": 10,
+      "minSubtotal": 0,
+      "note": "ลด 10% สำหรับลูกค้าใหม่"
+    },
+    {
+      "code": "GG50",
+      "type": "fixed",
+      "value": 50,
+      "minSubtotal": 700,
+      "note": "ลด ฿50 เมื่อซื้อครบ ฿700"
+    }
+  ],
+  "sizes": [
+    "M",
+    "L",
+    "XL",
+    "2XL"
+  ],
+  "sizeChart": {
+    "unit": "นิ้ว",
+    "rows": [
+      {
+        "label": "รอบอก (Width)",
+        "values": [
+          40,
+          44,
+          48,
+          52
+        ]
+      },
+      {
+        "label": "ความยาว (Length)",
+        "values": [
+          29,
+          30,
+          30.5,
+          31
+        ]
+      }
+    ]
+  },
+  "collections": [
+    {
+      "id": "good-game",
+      "name": "Good Game",
+      "tagline": "ลายเกมย้อนยุค สำหรับสายเกมเมอร์",
+      "image": "assets/img/goodgame-tag.jpg"
+    },
+    {
+      "id": "luca-rangers",
+      "name": "LUCA Rangers",
+      "tagline": "ฮีโร่ห้าสี ในสไตล์ LUCA",
+      "image": "assets/img/rangers-black.jpg"
+    },
+    {
+      "id": "japan-street",
+      "name": "Japan Street",
+      "tagline": "ตู้กดน้ำญี่ปุ่น じどうはんばいき",
+      "image": "assets/img/vending-white.jpg"
+    }
+  ],
+  "products": [
+    {
+      "id": "good-game-tee",
+      "name": "GOOD GAME Tee",
+      "collection": "good-game",
+      "price": 390,
+      "compareAt": 450,
+      "badge": "Best Seller",
+      "description": "เสื้อยืดลายเด็กเกมเมอร์จากคอลเลกชัน GOOD GAME พิมพ์ลายสีสดด้านหน้า พร้อมป้ายแท็กสีเหลืองสุดน่าสะสม",
+      "details": [
+        "ลายพิมพ์ด้านหน้า",
+        "มีไซซ์ M / L / XL / 2XL",
+        "มาพร้อมป้ายแท็ก GOOD GAME COLLECTION"
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "label": "ดำ",
+          "hex": "#151515",
+          "images": [
+            "assets/img/goodgame-black.jpg",
+            "assets/img/goodgame-tag.jpg"
+          ]
+        },
+        {
+          "name": "White",
+          "label": "ขาว",
+          "hex": "#ffffff",
+          "images": [
+            "assets/img/goodgame-white.jpg",
+            "assets/img/goodgame-photo.jpg",
+            "assets/img/goodgame-tag.jpg"
+          ]
+        }
+      ],
+      "soldOut": []
+    },
+    {
+      "id": "failure-learning-tee",
+      "name": "Failure Is Part Of The Learning Process Tee",
+      "collection": "good-game",
+      "price": 390,
+      "badge": "New",
+      "description": "“FAILURE IS PART OF THE LEARNING PROCESS” — แพ้ได้ เรียนรู้ได้ แล้วกด Continue ใหม่ ลายเกมเมอร์ตัวใหม่ล่าสุดพร้อมฉากหลัง Space Invaders",
+      "details": [
+        "ลายพิมพ์ด้านหน้า",
+        "มีไซซ์ M / L / XL / 2XL"
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "label": "ดำ",
+          "hex": "#151515",
+          "images": [
+            "assets/img/failure-black.jpg"
+          ]
+        }
+      ],
+      "soldOut": []
+    },
+    {
+      "id": "luca-rangers-tee",
+      "name": "LUCA RANGERS Tee",
+      "collection": "luca-rangers",
+      "price": 390,
+      "description": "รวมพลห้าฮีโร่ LUCA RANGERS ลายพิมพ์ด้านหลังเต็มแผ่น สีสดแบบการ์ตูนเช้าวันเสาร์ที่เราคิดถึง",
+      "details": [
+        "ลายพิมพ์ด้านหลัง",
+        "มีไซซ์ M / L / XL / 2XL"
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "label": "ดำ",
+          "hex": "#151515",
+          "images": [
+            "assets/img/rangers-black.jpg",
+            "assets/img/size-chart.jpg"
+          ]
+        },
+        {
+          "name": "White",
+          "label": "ขาว",
+          "hex": "#ffffff",
+          "images": [
+            "assets/img/rangers-white.jpg",
+            "assets/img/size-chart.jpg"
+          ]
+        }
+      ],
+      "soldOut": []
+    },
+    {
+      "id": "vending-machine-tee",
+      "name": "Vending Machine Tee",
+      "collection": "japan-street",
+      "price": 390,
+      "description": "ตู้กดน้ำญี่ปุ่น じどうはんばいき (Jidō hanbaiki) ในเวอร์ชัน LUCA ลายมินิมอลด้านหลัง ใส่ง่าย เข้ากับทุกลุค",
+      "details": [
+        "ลายพิมพ์ด้านหลัง",
+        "มีไซซ์ M / L / XL / 2XL"
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "label": "ดำ",
+          "hex": "#151515",
+          "images": [
+            "assets/img/vending-black.jpg"
+          ]
+        },
+        {
+          "name": "White",
+          "label": "ขาว",
+          "hex": "#ffffff",
+          "images": [
+            "assets/img/vending-white.jpg"
+          ]
+        }
+      ],
+      "soldOut": []
+    }
+  ]
+}
